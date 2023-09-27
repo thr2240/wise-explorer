@@ -1,0 +1,21 @@
+name: Deploy
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  deploy:
+    name: WISEX deploy
+    runs-on: ubuntu-22.04  
+    steps:
+    - name: Git Checkout Latest
+      uses: actions/checkout@v3
+      
+    - name: Install
+      run: yarn install
+
+    - name: Build
+      run: yarn run vue-cli-service build
+
+    - name: Deploy
+      run: cp -rf ./dist/* /var/www/html/

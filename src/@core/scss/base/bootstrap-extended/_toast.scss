@@ -1,0 +1,18 @@
+// Toasts
+
+.toast {
+  backdrop-filter: blur(6px);
+
+  &.show {
+    z-index: 1030;
+  }
+  .close:focus {
+    outline: none;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .toast {
+    left: 1rem;
+  }
+}

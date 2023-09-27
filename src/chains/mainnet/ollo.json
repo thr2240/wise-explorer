@@ -1,0 +1,36 @@
+{
+  "chain_name": "OLLO",
+  "api": [
+    "https://lcd.ollo.zone"
+  ],
+  "rpc": [
+    "https://rpc.ollo.zone"
+  ],
+  "snapshot_provider": "",
+  "sdk_version": "0.46.3",
+  "coin_type": "118",
+  "min_tx_fee": "1000",
+  "addr_prefix": "ollo",
+  "keplr_features": [
+    "stargate",
+    "ibc-transfer",
+    "ibc-go"
+  ],
+  "logo": "/logos/ollo.png",
+  "assets": [
+    {
+      "base": "uollo",
+      "symbol": "OLLO",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "/ollo.png"
+    },
+    {
+      "base": "utwise",
+      "symbol": "TWISE",
+      "exponent": "6",
+      "coingecko_id": "",
+      "logo": "/white.png"
+    }
+  ]
+}
